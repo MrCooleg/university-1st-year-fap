@@ -65,17 +65,17 @@ int main()
     int hours = ((((sum - seconds) / 60) - minutes) / 60) % 24;
 
     //вывод
-    cout << "Конечное время на часах: " << hours;
+    cout << "Конечное время на часах: " << hours << ":";
 
     if (minutes < 10)
-        cout << ":0" << minutes;
-    else
-        cout << ":" << minutes;
+        cout << "0";
+
+    cout << minutes << ":";
 
     if (seconds < 10)
-        cout << ":0" << seconds << endl;
-    else
-        cout << ":" << seconds << endl;
+        cout << "0";
+
+    cout << seconds << endl;
 
     return 0;
 }
