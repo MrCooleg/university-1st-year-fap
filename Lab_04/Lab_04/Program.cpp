@@ -5,15 +5,15 @@ using namespace std;
 
 static void task_2()
 {
-	double x, y; //инициализируем переменные координат
-	bool in_square, in_circle, in_sector; //инициализируем переменные областей квадрата, круга и сектора
+	double x, y; //объявляем переменные координат
+	bool in_square, in_circle, in_sector; //объявляем переменные областей квадрата, круга и сектора
 
 	//вводим значения координат
 	cout << "Введите координату x нужной точки: "; cin >> x;
 	cout << "Введите координату y нужной точки: "; cin >> y;
 
 	//для удобства задаём переменную суммы квадратов x и y (x² + y²)
-	double r_sqared = pow(x, 2) + pow(x, 2);
+	double r_sqared = x * x + y * y;
 
 	//проверяем принадлежность точки к области:
 
@@ -38,8 +38,8 @@ static void task_2()
 
 static void task_6()
 {
-	double x, y; //инициализируем переменные координат
-	bool in_triangle, in_rectangle1, in_rectangle2; //инициализируем переменные областей треугольника и двух прямоугольников
+	double x, y; //объявляем переменные координат
+	bool in_triangle, in_rectangle1, in_rectangle2; //объявляем переменные областей треугольника и двух прямоугольников
 
 	//вводим значения координат
 	cout << "Введите координату x нужной точки: "; cin >> x;
@@ -70,8 +70,8 @@ int main()
 {
 	setlocale(LC_ALL, "ru_RU");
 
-	task_2();
-	//task_6();
+	//task_2();
+	task_6();
 
 	return 0;
 }
