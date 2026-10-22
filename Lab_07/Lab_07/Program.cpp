@@ -23,7 +23,7 @@ static void task_2()
 	for (int i = 1; i <= 5; i++)
 	{
 		for (int j = 1; j <= i; j++)
-			cout << i << " ";
+			cout << i << ' ';
 
 		cout << endl;
 
@@ -36,8 +36,8 @@ int main()
 {
 	setlocale(LC_ALL, "ru_RU");
 
-	task_1();
-	//task_2();
+	//task_1();
+	task_2();
 
 	return 0;
 }

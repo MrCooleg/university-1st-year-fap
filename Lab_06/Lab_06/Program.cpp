@@ -51,7 +51,7 @@ static void task_2()
 {
 	//объявляем переменные
 	double x, sum = 0.0;
-	int n = 1;
+	int n = 0;
 
 	//вводим
 	cout << "Введите значение x: "; cin >> x;
@@ -59,8 +59,8 @@ static void task_2()
 	//считаем
 	do
 	{
-		sum += 1.0 / n;
 		n++;
+		sum += 1.0 / n;
 	} while (sum <= f2(x));
 
 	//выводим
@@ -71,8 +71,8 @@ int main()
 {
 	setlocale(LC_ALL, "ru_RU");
 	
-	task_1();
-	//task_2();
+	//task_1();
+	task_2();
 	
 	return 0;
 }
