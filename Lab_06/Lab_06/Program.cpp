@@ -71,8 +71,8 @@ int main()
 {
 	setlocale(LC_ALL, "ru_RU");
 	
-	//task_1();
-	task_2();
+	task_1();
+	//task_2();
 	
 	return 0;
 }
