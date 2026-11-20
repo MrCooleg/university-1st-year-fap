@@ -32,10 +32,7 @@ static void task_1()
 
 	srand((unsigned)time(NULL));
 
-	int array1[7];
-	int array2[7];
-	int array3[7];
-	int array4[7];
+	int array1[7], array2[7], array3[7], array4[7];
 
 	for (int i = 0; i < m; i++)
 	{
@@ -165,8 +162,8 @@ int main()
 {
 	setlocale(LC_ALL, "ru_RU");
 
-	task_1();
-	//task_2();
+	//task_1();
+	task_2();
 
 	return 0;
 }
